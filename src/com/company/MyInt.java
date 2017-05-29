@@ -19,17 +19,16 @@ public class MyInt {
 
         }
 
-        for(int i = 0; i < num.size(); i++){
-            if (num.get(i) % 2 == 0){
+        for (int i = 0; i < num.size(); i++) {
+            if (num.get(i) % 2 == 0) {
                 System.out.println("Even number " + " " + num.get(i));
-            }
-            else {
-                System.out.println("Odd number " + " " +num.get(i));
+            } else {
+                System.out.println("Odd number " + " " + num.get(i));
             }
         }
         int max = num.get(0);
         int min = num.get(0);
-        for (int i = 0; i < num.size() ; i++) {
+        for (int i = 0; i < num.size(); i++) {
             int number = num.get(i);
             if (number > max) max = number;
             if (number < min) min = number;
@@ -37,7 +36,7 @@ public class MyInt {
         }
         System.out.println("Max = " + max);
         System.out.println("Min = " + min);
-        for (int i = 0; i < num.size() ; i++) {
+        for (int i = 0; i < num.size(); i++) {
             if (num.get(i) % 3 == 0) {
                 System.out.println("Divide on 3 " + num.get(i));
             }
@@ -58,11 +57,9 @@ public class MyInt {
                 System.out.println("Numbers with three different digits " + num.get(i));
             }
 
-
         }
 
+
     }
-
-
 }
 
