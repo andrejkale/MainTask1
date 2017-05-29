@@ -12,6 +12,7 @@ public class MyInt {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<Integer> num = new ArrayList<Integer>();
+        String number1;
 
         for (int i = 0; i < 6; i++) {
             num.add(Integer.parseInt(reader.readLine()));
@@ -49,6 +50,14 @@ public class MyInt {
             if (num.get(i) % 7 == 0) {
                 System.out.println("Divide on 7 " + num.get(i));
             }
+
+        }
+        for (int i = 0; i < num.size(); i++) {
+            number1 = num.get(i).toString();
+            if (number1.length() == 3 && number1.charAt(0) != number1.charAt(1) && number1.charAt(1) != number1.charAt(2) && number1.charAt(0) != number1.charAt(2)) {
+                System.out.println("Numbers with three different digits " + num.get(i));
+            }
+
 
         }
 
