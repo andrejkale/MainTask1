@@ -58,6 +58,13 @@ public class MyInt {
             }
 
         }
+        for (int i = 0; i < num.size(); i++){
+            number1 = num.get(i).toString();
+            if (number1.length() == 4 && number1.charAt(0) + number1.charAt(1) == number1.charAt(2) + number1.charAt(3)){
+                System.out.println("Happy Numbers = " + num.get(i));
+            }
+
+        }
 
 
     }
