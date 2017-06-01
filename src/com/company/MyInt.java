@@ -51,12 +51,10 @@ public class MyInt {
         String number1;
         for (int i = 0; i < num.size() - 1; i++) {
             number1 = num.get(i).toString();
-            if (number1.length() < 3){
-                break;
-            }
-            if (number1.charAt(i) == (number1.charAt(i) + number1.charAt(i + 1)) / 2){
+            if (number1.length() == 3 &&(number1.charAt(0) == (number1.charAt(1) + number1.charAt(2)) / 2)){
                 System.out.println("Find numbers of half sum of neighbors " + num.get(i));
             }
+
 
         }
     }
